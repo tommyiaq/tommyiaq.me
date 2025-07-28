@@ -178,3 +178,6 @@ You now have:
 ✅ HTTPS enabled automatically by GitHub Pages (via Let's Encrypt)
 ✅ A live “Hello World” HTML page online
 ✅ All of this at a total cost of only your domain (~$3–$5/year)
+
+To run locally
+python -m http.server 8000
