@@ -1,0 +1,9 @@
+# Claude / AI tools
+.claude/
+.mcp.json
+.impeccable/
+
+# Screenshot di sviluppo
+screenshot*.png
+ss*.png
+handoff.md

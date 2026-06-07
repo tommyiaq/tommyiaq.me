@@ -2,84 +2,139 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Tommaso Iaquinta – Consulente AI specializzato in NLP, innovazione guidata dall'AI e formazione. Esplora progetti, competenze e informazioni di contatto.">
-  <meta name="keywords" content="Consulente AI, Esperto NLP, Intelligenza Artificiale, Tommaso Iaquinta, Progetti AI, Formazione AI">
+  <meta name="description" content="Tommaso Iaquinta – Consulente AI specializzato in NLP, innovazione di prodotto e formazione. Dottorato in Ingegneria Informatica.">
+  <meta name="keywords" content="Consulente AI, Esperto NLP, Intelligenza Artificiale, Tommaso Iaquinta, Progetti AI, Machine Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tommaso Iaquinta – Consulente AI & Esperto LLM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Tommaso Iaquinta – Consulente AI & Esperto NLP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="lang-switcher" style="position:absolute;top:18px;right:24px;font-size:1rem;z-index:10;">
-      <a href="index.html" onclick="localStorage.setItem('lang','en')" style="margin-right:8px; text-decoration:underline; color:#3b5bdb; font-weight:600; vertical-align:middle;">
-        <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/gb.svg" alt="English" style="width:22px;height:16px;vertical-align:middle;border-radius:2px;"> EN
-      </a> |
-      <a href="index.it.html" onclick="localStorage.setItem('lang','it')" style="margin-left:8px; text-decoration:underline; color:#3b5bdb; font-weight:600; vertical-align:middle;">
-        <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/it.svg" alt="Italiano" style="width:22px;height:16px;vertical-align:middle;border-radius:2px;"> IT
-      </a>
-    </div>
-    <script>
-      // Only redirect if no language preference is saved
-      const savedLang = localStorage.getItem('lang');
-      if (!savedLang && navigator.language && navigator.language.startsWith('it') && !window.location.pathname.endsWith('index.it.html')) {
-        window.location.href = 'index.it.html';
-      }
-    </script>
+  <a href="#main" class="skip-link">Vai al contenuto</a>
 
-  <header>
-    <img src="images/tommaso.jpg" alt="Tommaso Iaquinta - Consulente AI" class="profile-pic" />
-    <div class="header-content">
-      <h1>Tommaso Iaquinta</h1>
-      <h2>Consulente AI | Esperto NLP | Formatore</h2>
-    </div>
-  </header>
+  <nav class="lang-switcher" aria-label="Lingua">
+    <a href="index.html" onclick="localStorage.setItem('lang','en')" class="lang-link" hreflang="en">
+      <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/gb.svg" alt="" aria-hidden="true" width="18" height="13"> EN
+    </a>
+    <span class="lang-sep" aria-hidden="true">/</span>
+    <a href="index.it.html" onclick="localStorage.setItem('lang','it')" class="lang-link" aria-current="page" hreflang="it">
+      <img src="https://cdn.jsdelivr.net/npm/svg-country-flags@1.2.10/svg/it.svg" alt="" aria-hidden="true" width="18" height="13"> IT
+    </a>
+  </nav>
 
-  <div class="container">
-    <!-- 🎯 Chiamata all'Azione (CTA) -->
-    <section style="text-align:center; margin-bottom:2.5rem;">
-      <a href="#contatti" class="cta-btn" style="display:inline-block; background:#3b5bdb; color:#fff; font-weight:700; padding:0.9em 2em; border-radius:8px; font-size:1.2rem; text-decoration:none; box-shadow:0 2px 8px #3b5bdb22; transition:background 0.2s; margin-bottom:1.5rem;">Contattami</a>
-      <p><a href="cv-it.pdf" download class="button">Scarica il mio CV (PDF)</a></p>
-    </section>
-    <section>
-      <h2>Chi sono</h2>
-      <p>
-        Sono un consulente AI, esperto NLP e formatore appassionato di intelligenza artificiale applicata a problemi reali. Con un dottorato in Ingegneria Informatica e una formazione in Fisica, mi occupo di NLP, innovazione di prodotto guidata dall'AI e applicazioni didattiche del machine learning. Il mio obiettivo è aiutare organizzazioni e persone a sfruttare il potere del linguaggio e dei dati.
-      </p>
-    </section>
-    <section>
-      <h2>Portfolio & Progetti</h2>
-      <ul>
-        <li><strong>Chatmenu</strong> – Primo assistente AI per ristoranti (<a href="https://menumal.it" target="_blank">visita</a>)</li>
-        <li><strong>Yukai</strong> – Generatore automatico di giochi linguistici educativi (<a href="https://areteformazione.it/yukai/" target="_blank">visita</a>)</li>
-        <li><strong>WebCrow</strong> – Risolutore di cruciverba con AI (<a href="https://webcrow.diism.unisi.it" target="_blank">visita</a>)</li>
-        <li><strong>Analizzatore GDPR</strong> – Progetto CLAUDETTE (<a href="http://claudette.eui.eu" target="_blank">visita</a>)</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Curriculum</h2>
-      <ul>
-        <li><strong>Esperto AI</strong> – Menumal.it (2024–Presente)</li>
-        <li><strong>Docente</strong> – Informatica & Fisica, varie istituzioni italiane (2022–Presente)</li>
-        <li><strong>Esperto NLP</strong> – Expert.AI (2020–2022)</li>
-        <li><strong>Formazione:</strong> Dottorato in Intelligenza Artificiale, MSc in Robotica & Automazione, BSc in Fisica</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Competenze</h2>
-      <ul>
-        <li><span class="icon">🔤</span>Linguaggi: Python, Java, SQL, Bash, Unix</li>
-        <li><span class="icon">🛠️</span>Strumenti: GIT, Latex, VS Code e molti altri</li>
-        <li><span class="icon">🌐</span>Madrelingua: Italiano, Inglese fluente (C1), Tedesco & Croato (A2)</li>
-      </ul>
-    </section>
-    <section id="contatti">
-      <h2>Contatti</h2>
-      <div class="contact">
-        <p><span class="icon">✉️</span>Email: <a href="mailto:tommyiaq22@gmail.com">tommyiaq22@gmail.com</a></p>
-        <p><span class="icon">💼</span>LinkedIn: <a href="https://www.linkedin.com/in/tommyiaq/" target="_blank">tommyiaq</a></p>
-        <p><span class="icon">📍</span>Località: Poggibonsi, Italia</p>
+  <script>
+    const savedLang = localStorage.getItem('lang');
+    if (!savedLang && navigator.language && navigator.language.startsWith('it') && !window.location.pathname.endsWith('index.it.html')) {
+      window.location.href = 'index.it.html';
+    }
+  </script>
+
+  <main id="main">
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-geo">Poggibonsi, Italia</p>
+          <h1>Tommaso<br>Iaquinta</h1>
+          <p class="hero-role">Consulente AI · Esperto NLP · Formatore</p>
+          <p class="hero-bio">Costruisco sistemi NLP, progetto prodotti guidati dall'AI e insegno machine learning. Dottorato in Ingegneria Informatica, background in Fisica.</p>
+          <div class="hero-actions">
+            <a href="#contatti" class="btn btn-primary">Contattami</a>
+            <a href="cv-it.pdf" download class="btn btn-ghost">Scarica CV</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/tommaso.jpg" alt="Tommaso Iaquinta, Consulente AI" />
+        </div>
       </div>
-    </section>
-  </div>
+    </header>
+
+    <div class="content">
+      <section class="section" aria-labelledby="progetti-heading">
+        <h2 id="progetti-heading" class="section-heading">Progetti</h2>
+        <ul class="project-list" role="list">
+          <li class="project-item">
+            <div class="project-info">
+              <strong class="project-name">Chatmenu</strong>
+              <span class="project-desc">Primo assistente AI per ristoranti</span>
+            </div>
+            <a href="https://menumal.it" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visita Chatmenu">↗</a>
+          </li>
+          <li class="project-item">
+            <div class="project-info">
+              <strong class="project-name">Yukai</strong>
+              <span class="project-desc">Generatore automatico di giochi linguistici educativi</span>
+            </div>
+            <a href="https://areteformazione.it/yukai/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visita Yukai">↗</a>
+          </li>
+          <li class="project-item">
+            <div class="project-info">
+              <strong class="project-name">WebCrow</strong>
+              <span class="project-desc">Risolutore di cruciverba con AI</span>
+            </div>
+            <a href="https://webcrow.diism.unisi.it" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visita WebCrow">↗</a>
+          </li>
+          <li class="project-item">
+            <div class="project-info">
+              <strong class="project-name">CLAUDETTE</strong>
+              <span class="project-desc">Analisi documenti GDPR (progetto EUI)</span>
+            </div>
+            <a href="http://claudette.eui.eu" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Visita CLAUDETTE">↗</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="background-heading">
+        <h2 id="background-heading" class="section-heading">Curriculum</h2>
+        <dl class="timeline">
+          <div class="timeline-item">
+            <dt class="timeline-period">2024 – Oggi</dt>
+            <dd class="timeline-role">AI Expert <span class="timeline-org">Menumal.it</span></dd>
+          </div>
+          <div class="timeline-item">
+            <dt class="timeline-period">2022 – Oggi</dt>
+            <dd class="timeline-role">Docente <span class="timeline-org">Informatica & Fisica, istituzioni italiane</span></dd>
+          </div>
+          <div class="timeline-item">
+            <dt class="timeline-period">2020 – 2022</dt>
+            <dd class="timeline-role">NLP Expert <span class="timeline-org">Expert.AI</span></dd>
+          </div>
+          <div class="timeline-item timeline-edu">
+            <dt class="timeline-period">Formazione</dt>
+            <dd class="timeline-role">Dottorato in Intelligenza Artificiale · MSc Robotica & Automazione · BSc Fisica</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" aria-labelledby="competenze-heading">
+        <h2 id="competenze-heading" class="section-heading">Competenze</h2>
+        <dl class="skills-list">
+          <div class="skill-row skill-row--code">
+            <dt>Linguaggi</dt>
+            <dd>Python · Java · SQL · Bash · Unix</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Strumenti</dt>
+            <dd>Git · LaTeX · VS Code</dd>
+          </div>
+          <div class="skill-row">
+            <dt>Lingue</dt>
+            <dd>Italiano (madrelingua) · Inglese C1 · Tedesco A2 · Croato A2</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="section" id="contatti" aria-labelledby="contatti-heading">
+        <h2 id="contatti-heading" class="section-heading">Contatti</h2>
+        <p class="contact-intro">Disponibile per progetti di consulenza, ruoli advisory e docenza. Rispondo entro 48 ore.</p>
+        <ul class="contact-list" role="list">
+          <li><a href="mailto:tommyiaq22@gmail.com" class="contact-link">tommyiaq22@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/tommyiaq/" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/tommyiaq ↗</a></li>
+          <li><span class="contact-text">Poggibonsi, Italia</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
 </body>
 </html>
